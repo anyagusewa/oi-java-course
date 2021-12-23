@@ -1,0 +1,17 @@
+<div th:fragment="header" style="background-color: lightgray">
+    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+     <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <span class="fs-6 px-2" style="color: palevioletred">English Teacher's assistant</span>
+     </a>
+
+     <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/">Main page</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/blog">Blog</a>
+         <a class="me-3 py-2 text-dark text-decoration-none" href="/blog/add">Add article</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/about">About us</a>
+         <form th:action="@{/logout}" method="post">
+             <input type="submit" value="Sign Out" style="color: palevioletred" class="m-1"/>
+         </form>
+     </nav>
+    </div>
+</div>
